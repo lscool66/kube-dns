@@ -1,1 +1,1 @@
-FROM --platform=linux/arm64 minio/mc:RELEASE.2020-12-29T23-29-29Z-arm64
+FROM --platform=linux/arm64 minio/mc:RELEASE.2024-09-22T00-33-43Z-arm64
