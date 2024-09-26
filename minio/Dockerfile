@@ -1,0 +1,1 @@
+FROM --platform=linux/arm64 minio/minio:RELEASE.2019-08-07T01-59-21Z-arm64
