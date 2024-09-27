@@ -1,1 +1,1 @@
-FROM --platform=linux/arm64 arm64v8/busybox
+FROM --platform=linux/arm64/v8 busybox
