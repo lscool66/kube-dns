@@ -1,0 +1,1 @@
+FROM --platform=linux/arm64 labring/nerdctl:v1.7.7
