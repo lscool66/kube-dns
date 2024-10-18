@@ -1,1 +1,1 @@
-FROM --platform=linux/arm64 browserless/chrome:latest
+FROM --platform=linux/arm64 ghcr.io/browserless/chromium
