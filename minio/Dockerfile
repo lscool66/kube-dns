@@ -1,1 +1,1 @@
-FROM --platform=linux/arm64 minio/minio:RELEASE.2020-11-25T22-36-25Z-arm64
+FROM --platform=linux/arm64 bitnami/minio:2024.10.13
