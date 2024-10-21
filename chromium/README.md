@@ -117,6 +117,30 @@ nerdctl -n k8s.io run \
   sealos.hub:5000/lscool66/chromium:latest-arm64
 ```
 
+```sh
+docker buildx build --platform=linux/arm64 -t registry.cn-beijing.aliyuncs.com/lscool66/wkhtmltopdf:latest-arm64 --push .
+docker pull --platform=linux/arm64 registry.cn-beijing.aliyuncs.com/lscool66/wkhtmltopdf:latest-arm64
+docker tag registry.cn-beijing.aliyuncs.com/lscool66/wkhtmltopdf:latest-arm64 sealos.hub:5000/lscool66/wkhtmltopdf:latest-arm64
+docker push sealos.hub:5000/lscool66/wkhtmltopdf:latest-arm64
+nerdctl -n k8s.io pull sealos.hub:5000/lscool66/wkhtmltopdf:latest-arm64
+
+nerdctl -n k8s.io run \
+  --rm \
+  -it \
+  -p 3000:3000 \
+  -e "CONCURRENT=10" \
+  -e "TOKEN=6R0W53R135510" \
+  -e "TIMEOUT=1800000" \
+  -e "CORS=true" \
+  sealos.hub:5000/lscool66/wkhtmltopdf:latest-arm64 bash
+```
+
+
+
+```
+docker buildx build --platform=linux/arm64 -t registry.cn-beijing.aliyuncs.com/lscool66/html2pdf:latest-arm64 --push .
+```
+
 
 
 ```sh
