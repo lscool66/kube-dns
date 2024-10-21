@@ -1,7 +1,11 @@
 ```sh
-
+# arm64
+docker pull appvantage/html2pdf-service:2.1.2-chromium
+# amd64
 docker pull appvantage/html2pdf-service:2.1.2
+
 docker run --rm -p 3000:3000 appvantage/html2pdf-service:2.1.2
+
 
 http post -t 'application/json' 'https://ominous-couscous-97x6gwpr4jqc7qxx-3000.app.github.dev/' {
   "html": "<h1>Hello World!</h1>",
